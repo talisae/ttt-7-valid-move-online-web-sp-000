@@ -1,5 +1,5 @@
 
-def valid_move(board, index)
+def valid_move(board, index = 0..8)
   if board[index] == " " && index.between(0, 8)
     return true
   elsif board[index] == "" && index.between(0, 8)
