@@ -10,9 +10,8 @@ def position_taken?(board,position)
   end
 end
 
-
-def valid_move?(input, board)
-  if input.between?(0, 8) && !(position_taken?(board, number_entered))
+def valid_move?(position, board)
+  if position.between?(0, 8) && !(position_taken?(board, position))
 end
 
 def position_taken?(board, index)
