@@ -1,28 +1,16 @@
-def position_taken?(board,position)
-  if board[position] == " "
-    return false
-    elsif board[position] == ""
-      return false
-    elsif board[position] == nil
-      return false
-    else board[position] == "X" || "O"
-      return true
-  end
-end
 
 def valid_move(board, index)
   if board[index] == " " && index.between(0, 8)
     return true
   elsif board[index] == "" && index.between(0, 8)
-      return false
+      return true
     elsif board[index] == nil
       return false
     else board[index] == "X" || "O"
-      return true
+      return false
   end
 end
 
-end
 # code your #valid_move? method here
 
 
