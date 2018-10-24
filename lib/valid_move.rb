@@ -1,6 +1,5 @@
 
 def valid_move?(position, board)
-  position_taken?(board, position) == true
   
 end
 
