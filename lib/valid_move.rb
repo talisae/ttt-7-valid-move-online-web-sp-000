@@ -11,9 +11,9 @@ def position_taken?(board,position)
 end
 
 def valid_move(board, index)
-  if board[index] == " "
-    return false
-  elsif board[index] == ""
+  if board[index] == " " && index.between(0, 8)
+    return true
+  elsif board[index] == "" && index.between(0, 8)
       return false
     elsif board[index] == nil
       return false
