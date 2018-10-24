@@ -11,7 +11,7 @@ def position_taken?(board,position)
 end
 
 def valid_move
-  if position_taken?
+  if position_taken? == true
     return false
 
 end
