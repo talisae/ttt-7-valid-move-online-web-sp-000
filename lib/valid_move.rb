@@ -4,7 +4,7 @@ def valid_move?(board, position)
 	if !position_taken?(board, square) && square.between?(0,8)
 		true
  	else
-		false || nil
+		false
  	end
  end
 
