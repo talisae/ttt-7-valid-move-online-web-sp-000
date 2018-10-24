@@ -10,9 +10,9 @@ def position_taken?(board,position)
   end
 end
 
-def valid_move
-  if position_taken? == true
-    return false
+def valid_move(input)
+  if input.between(0, 8)
+    return true
 
 end
 # code your #valid_move? method here
