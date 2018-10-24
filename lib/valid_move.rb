@@ -5,10 +5,6 @@ def valid_move?(position, board)
 
 end
 
-def position_taken?(board, index)
- !(board[index] == " " || board[index] == "" || board[index] == nil)
-end
-
 # code your #valid_move? method here
 
 
