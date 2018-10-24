@@ -7,10 +7,13 @@ def valid_move?(input, board)
 
 end
 
-def position_taken?(board, index)
- !(board[index] == " " || board[index] == "" || board[index] == nil)
-end
-
+def position_taken?(board, position)
+  if board[position] == " " || board[position] == "" || board[position] == nil
+  	false
+   else
+  	true
+   end
+ end 
 def position_taken?(board, position)
   if board[position] == " "
     return false
